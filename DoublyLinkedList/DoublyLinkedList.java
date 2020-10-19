@@ -194,11 +194,21 @@ public class DoublyLinkedList
       System.out.print("|"+Temp.Data+"|<=>");
       Temp = Temp.Next;
     }
-    /*while(Temp != null) // Print reverce order
+    System.out.println();
+  }
+
+  public void DisplyRev()
+  {
+    Node Temp = Head;
+    while(Temp.Next != null)
     {
-      System.out.print("|"+Temp.Data+"|->");
+      Temp = Temp.Next;
+    }
+    while(Temp != null) // Print reverce order
+    {
+      System.out.print("|"+Temp.Data+"|<=>");
       Temp = Temp.Prev;
-    }*/
+    }
     System.out.println();
   }
   public int Count()
